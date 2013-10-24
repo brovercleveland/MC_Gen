@@ -2,7 +2,7 @@
 # using:
 # Revision: 1.381.2.28
 # Source: /local/reps/CMSSW/CMSSW/Configuration/PyReleaseValidation/python/ConfigBuilder.py,v
-# with command line options: PYTHIA8_POWHEG_H_Zg_8TeV_cff.py --step GEN,SIM --conditions START53_V27::All --pileup NoPileUp --datamix NODATAMIXER --eventcontent RAWSIM --datatier GEN-SIM --filein=file:/eos/uscms/store/user/bpollack/lhe/h_ggH_WW_ZGamma_125_15.lhe --no_exec
+# with command line options: PYTHIA8_VBF_H_Zg_8TeV_cff.py --step GEN,SIM --conditions START53_V27::All --pileup NoPileUp --datamix NODATAMIXER --eventcontent RAWSIM --datatier GEN-SIM --no_exec
 import FWCore.ParameterSet.Config as cms
 
 process = cms.Process('SIM')
@@ -33,10 +33,9 @@ process.maxEvents = cms.untracked.PSet(
 )
 
 # Input source
-process.source = cms.Source("LHESource",
-    fileNames = cms.untracked.vstring('file:/eos/uscms/store/user/bpollack/lhe/h_ggH_WW_ZGamma_125_15.lhe'),
+process.source = cms.Source("EmptySource",
     firstEvent = cms.untracked.uint32(1+NTRIALS*NJOB)
-)
+  )
 
 process.options = cms.untracked.PSet(
 
@@ -45,7 +44,7 @@ process.options = cms.untracked.PSet(
 # Production Info
 process.configurationMetadata = cms.untracked.PSet(
     version = cms.untracked.string('$Revision: 1.381.2.28 $'),
-    annotation = cms.untracked.string('PYTHIA8_POWHEG_H_Zg_8TeV_cff.py nevts:1'),
+    annotation = cms.untracked.string('PYTHIA8_VBF_H_Zg_8TeV_cff.py nevts:1'),
     name = cms.untracked.string('PyReleaseValidation')
 )
 
@@ -55,7 +54,7 @@ process.RAWSIMoutput = cms.OutputModule("PoolOutputModule",
     splitLevel = cms.untracked.int32(0),
     eventAutoFlushCompressedSize = cms.untracked.int32(5242880),
     outputCommands = process.RAWSIMEventContent.outputCommands,
-    fileName = cms.untracked.string('PYTHIA8_POWHEG_H_Zg_8TeV_cff_py_GEN_SIM_NJOB.root'),
+    fileName = cms.untracked.string('PYTHIA8_VBF_H_Zg_8TeV_cff_py_GEN_SIM_NJOB.root'),
     dataset = cms.untracked.PSet(
         filterName = cms.untracked.string(''),
         dataTier = cms.untracked.string('GEN-SIM')
@@ -72,7 +71,7 @@ process.genstepfilter.triggerConditions=cms.vstring("generation_step")
 from Configuration.AlCa.GlobalTag import GlobalTag
 process.GlobalTag = GlobalTag(process.GlobalTag, 'START53_V27::All', '')
 
-process.generator = cms.EDFilter("Pythia8HadronizerFilter",
+process.generator = cms.EDFilter("Pythia8GeneratorFilter",
     pythiaPylistVerbosity = cms.untracked.int32(1),
     filterEfficiency = cms.untracked.double(1.0),
     pythiaHepMCVerbosity = cms.untracked.bool(False),
@@ -80,8 +79,9 @@ process.generator = cms.EDFilter("Pythia8HadronizerFilter",
     maxEventsToPrint = cms.untracked.int32(1),
     PythiaParameters = cms.PSet(
         processParameters = cms.vstring('Tune:pp = 5',
-            'PDF:pSet = 7',
-            'HiggsSM:gg2H = on',
+            'PDF:pSet = 5',
+            'HiggsSM:ff2Hff(t:ZZ) = on',
+            'HiggsSM:ff2Hff(t:WW) = on',
             '25:m0 = 125.0',
             '25:onMode = off',
             '25:onIfMatch = 23 22',

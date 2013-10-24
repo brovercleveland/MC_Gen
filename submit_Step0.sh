@@ -27,7 +27,7 @@ echo "Submitting jobs to condor"
 echo " "
 
 i=0;
-cd $workDir/testOut0
+cd $workDir/testOut0_pdf7
 while(( $i < $njobs )); do 
 
 cat > submit.cmd <<EOF
@@ -37,15 +37,16 @@ cat > submit.cmd <<EOF
             Executable              = $script
             Arguments               = $i $ntrials 
             Rank                    = Mips
-            Requirements            = (OpSys == "LINUX") && (Disk >= DiskUsage) && ((Memory * 1024) >= ImageSize) && (HasFileTransfer) 
+            Requirements            = (OpSys == "LINUX") && (Disk >= DiskUsage) && ((Memory * 1024) >= ImageSize) && (HasFileTransfer)
             +LENGTH                 = "LONG"  
             GetEnv                  = True
             Input                   = /dev/null
-            Output                  = ../res0/job_${i}.out
-            Error                   = ../res0/job_${i}.err
+            Output                  = ../res0_pdf7/job_${i}.out
+            Error                   = ../res0_pdf7/job_${i}.err
+            Log                     = ../res0_pdf7/job_${i}.log 
             should_transfer_files   = YES
             when_to_transfer_output = ON_EXIT
-            transfer_input_files    = $workDir/PYTHIA8_H_Zg_8TeV_cff_py_GEN_SIM.py, $genDir 
+            transfer_input_files    = $workDir/PYTHIA8_POWHEG_H_Zg_8TeV_cff_py_GEN_SIM.py, $genDir 
             Queue
 EOF
 
