@@ -9,7 +9,7 @@
 jobId=`date +%j%m%d%k%M%S`
 ntrials=500
 njobs=200
-#ntrials=1
+#ntrials=2
 #njobs=2
 
 # Prepare environment
@@ -29,9 +29,9 @@ echo "Submitting jobs to condor"
 echo " "
 
 i=0;
-cd $workDir/testOut1
+cd $workDir/testOut1_pdf7
 while(( $i < $njobs )); do 
-  inputFile=/uscms_data/d2/bpollack/genProd/CMSSW_5_3_11_patch6/src/test/testOut0/PYTHIA8_H_Zg_8TeV_cff_py_GEN_SIM_${i}.root
+  inputFile=/uscms_data/d2/bpollack/genProd/CMSSW_5_3_11_patch6/src/test/testOut0_pdf7/PYTHIA8_POWHEG_H_Zg_8TeV_cff_py_GEN_SIM_${i}.root
 
 cat > submit.cmd <<EOF
             Universe                = vanilla
@@ -44,11 +44,12 @@ cat > submit.cmd <<EOF
             +LENGTH                 = "LONG"  
             GetEnv                  = True
             Input                   = /dev/null
-            Output                  = ../res1/job_${i}.out
-            Error                   = ../res1/job_${i}.err
+            Output                  = ../res1_pdf7/job_${i}.out
+            Error                   = ../res1_pdf7/job_${i}.err
+            Log                     = ../res1_pdf7/job_${i}.log
             should_transfer_files   = YES
             when_to_transfer_output = ON_EXIT
-            transfer_input_files    = $workDir/REDIGI_DIGI_L1_DIGI2RAW_HLT_PU.py, $genDir, $inputFile 
+            transfer_input_files    = $workDir/REDIGI_PYTHIA8_POWHEG_H_Zg_8TeV_DIGI_L1_DIGI2RAW_HLT_PU.py, $genDir, $inputFile 
             Queue
 EOF
 

@@ -18,14 +18,14 @@ cd ${_CONDOR_SCRATCH_DIR}
 job=$1
 ntrials=$2
 
-sed -i "s/NJOB/$job/g" REDIGI_DIGI_L1_DIGI2RAW_HLT_PU.py
-sed -i "s/NTRIALS/$ntrials/g" REDIGI_DIGI_L1_DIGI2RAW_HLT_PU.py
+sed -i "s/NJOB/$job/g" REDIGI_PYTHIA8_POWHEG_H_Zg_8TeV_DIGI_L1_DIGI2RAW_HLT_PU.py 
+sed -i "s/NTRIALS/$ntrials/g" REDIGI_PYTHIA8_POWHEG_H_Zg_8TeV_DIGI_L1_DIGI2RAW_HLT_PU.py 
 
-echo "running cmsRun REDIGI_DIGI_L1_DIGI2RAW_HLT_PU.py, job $job ntrials $ntrials" >> /dev/stderr
-cmsRun REDIGI_DIGI_L1_DIGI2RAW_HLT_PU.py 
+echo "running cmsRun REDIGI_PYTHIA8_POWHEG_H_Zg_8TeV_DIGI_L1_DIGI2RAW_HLT_PU.py, job $job ntrials $ntrials" >> /dev/stderr
+cmsRun REDIGI_PYTHIA8_POWHEG_H_Zg_8TeV_DIGI_L1_DIGI2RAW_HLT_PU.py 
 
 rm histProbFunction.root
-rm REDIGI_DIGI_L1_DIGI2RAW_HLT_PU.py
+rm REDIGI_PYTHIA8_POWHEG_H_Zg_8TeV_DIGI_L1_DIGI2RAW_HLT_PU.py
 echo "DONE" >> /dev/stderr
 hostname
 

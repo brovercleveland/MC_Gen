@@ -10,3 +10,12 @@ Changing Local Pythia8 Version
         echo $PYTHIA8DATA                                                          
         cvs co -r CMSSW_5_3_8 GeneratorInterface/Pythia8Interface                           
         scram b
+
+Settings
+--------
+Driver macros are all tuned to produce signal for 2012, S10 pileup, 5_3_X conditions.
+Currently, the available gen fragments are:
+  * LO Pythia8
+  * NLO POWHEG + Pythia8 (still working on tuning)
+  * LO VBF Pythia8
+

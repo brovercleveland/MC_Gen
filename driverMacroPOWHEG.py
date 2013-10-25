@@ -41,7 +41,7 @@ if int(step) == 0:
       --filein=file:/eos/uscms/store/user/bpollack/lhe/h_ggH_WW_ZGamma_125_15.lhe \
       --no_exec')
 elif int(step) == 1:
-  os.system('cmsDriver.py REDIGI \
+  os.system('cmsDriver.py REDIGI_PYTHIA8_POWHEG_H_Zg_8TeV \
       --step DIGI,L1,DIGI2RAW,HLT:7E33v2 \
       --conditions START53_V27::All \
       --pileup 2012_Summer_50ns_PoissonOOTPU \
@@ -52,7 +52,7 @@ elif int(step) == 1:
       --filein file:PYTHIA8_POWHEG_H_Zg_8TeV_cff_py_GEN_SIM.root \
       --no_exec')
 elif int(step) == 2:
-  os.system('cmsDriver.py STEP2 \
+  os.system('cmsDriver.py STEP2__PYTHIA8_POWHEG_H_Zg_8TeV \
       --step RAW2DIGI,L1Reco,RECO,VALIDATION:validation_prod,DQM:DQMOfflinePOGMC \
       --conditions START53_V27::All \
       --pileup 2012_Summer_50ns_PoissonOOTPU \

@@ -3,9 +3,9 @@ import sys, os
 import subprocess
 
 def checkFiles(selection):
-  proc = subprocess.Popen(["bash -c 'wc -l <(ls -1 testOut{0}_VBF)'".format(selection)],stdout=subprocess.PIPE, shell=True)
+  proc = subprocess.Popen(["bash -c 'wc -l <(ls -1 testOut{0}_pdf7)'".format(selection)],stdout=subprocess.PIPE, shell=True)
   (out,err) = proc.communicate()
-  proc2 = subprocess.Popen(["bash -c 'wc -l <(ls -1 res{0}_VBF)'".format(selection)],stdout=subprocess.PIPE, shell=True)
+  proc2 = subprocess.Popen(["bash -c 'wc -l <(ls -1 res{0}_pdf7)'".format(selection)],stdout=subprocess.PIPE, shell=True)
   (out2,err2) = proc2.communicate()
   num1 = int(out.rsplit(" ")[0])
   num2 = int(out2.rsplit(" ")[0])
