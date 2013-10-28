@@ -1,8 +1,8 @@
 # Auto generated configuration file
 # using:
-# Revision: 1.381.2.18
+# Revision: 1.381.2.28
 # Source: /local/reps/CMSSW/CMSSW/Configuration/PyReleaseValidation/python/ConfigBuilder.py,v
-# with command line options: STEP2 --step RAW2DIGI,L1Reco,RECO,VALIDATION:validation_prod,DQM:DQMOfflinePOGMC --conditions START53_V27::All --pileup 2012_Summer_50ns_PoissonOOTPU --pileup_input dbs:/RelValMinBias/CMSSW_5_2_1-START52_V4-v1/GEN-SIM --datamix NODATAMIXER --eventcontent AODSIM,DQM --datatier AODSIM,DQM --filein file:REDIGI_DIGI_L1_DIGI2RAW_HLT_PU.root --no_exec
+# with command line options: STEP2_PYTHIA8_POWHEG_H_Zg_8TeV --step RAW2DIGI,L1Reco,RECO,VALIDATION:validation_prod,DQM:DQMOfflinePOGMC --conditions START53_V27::All --pileup 2012_Summer_50ns_PoissonOOTPU --pileup_input dbs:/RelValMinBias/CMSSW_5_2_1-START52_V4-v1/GEN-SIM --datamix NODATAMIXER --eventcontent AODSIM,DQM --datatier AODSIM,DQM --filein file:REDIGI_PYTHIA8_POWHEG_H_Zg_8TeV_DIGI_L1_DIGI2RAW_HLT_PU.root --no_exec
 import FWCore.ParameterSet.Config as cms
 
 process = cms.Process('RECO')
@@ -30,7 +30,7 @@ process.maxEvents = cms.untracked.PSet(
 # Input source
 process.source = cms.Source("PoolSource",
     secondaryFileNames = cms.untracked.vstring(),
-    fileNames = cms.untracked.vstring('file:PYTHIA8_175_H_Zg_8TeV_cff_py_GEN_SIM_REDIGI_DIGI_L1_DIGI2RAW_HLT_PU_NJOB.root')
+    fileNames = cms.untracked.vstring('file:REDIGI_PYTHIA8_POWHEG_H_Zg_8TeV_DIGI_L1_DIGI2RAW_HLT_PU_NJOB.root')
 )
 
 process.options = cms.untracked.PSet(
@@ -39,8 +39,8 @@ process.options = cms.untracked.PSet(
 
 # Production Info
 process.configurationMetadata = cms.untracked.PSet(
-    version = cms.untracked.string('$Revision: 1.381.2.18 $'),
-    annotation = cms.untracked.string('STEP2 nevts:1'),
+    version = cms.untracked.string('$Revision: 1.381.2.28 $'),
+    annotation = cms.untracked.string('STEP2_PYTHIA8_POWHEG_H_Zg_8TeV nevts:1'),
     name = cms.untracked.string('PyReleaseValidation')
 )
 
@@ -49,7 +49,7 @@ process.configurationMetadata = cms.untracked.PSet(
 process.AODSIMoutput = cms.OutputModule("PoolOutputModule",
     eventAutoFlushCompressedSize = cms.untracked.int32(15728640),
     outputCommands = process.AODSIMEventContent.outputCommands,
-    fileName = cms.untracked.string('PYTHIA8_175_H_Zg_8TeV_cff_py_GEN_SIM_REDIGI_DIGI_L1_DIGI2RAW_HLT_PU_STEP2_RAW2DIGI_L1Reco_RECO_VALIDATION_DQM_PU_NJOB.root'),
+    fileName = cms.untracked.string('STEP2_PYTHIA8_POWHEG_H_Zg_8TeV_RAW2DIGI_L1Reco_RECO_VALIDATION_DQM_PU_NJOB.root'),
     dataset = cms.untracked.PSet(
         filterName = cms.untracked.string(''),
         dataTier = cms.untracked.string('AODSIM')
