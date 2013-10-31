@@ -22,20 +22,14 @@ process.load('GeneratorInterface.Core.genFilterSummary_cff')
 process.load('Configuration.StandardSequences.SimIdeal_cff')
 process.load('Configuration.StandardSequences.EndOfProcess_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
-from IOMC.RandomEngine.RandomServiceHelper import RandomNumberServiceHelper
-randSvc = RandomNumberServiceHelper(process.RandomNumberGeneratorService)
-randSvc.populate()
 
-customSeed = 8675309+NTRIALS*NJOB
-process.RandomNumberGeneratorService.generator.initialSeed = customSeed
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(NTRIALS)
+    input = cms.untracked.int32(1)
 )
 
 # Input source
 process.source = cms.Source("LHESource",
-    fileNames = cms.untracked.vstring('file:/eos/uscms/store/user/bpollack/lhe/h_ggH_WW_ZGamma_125_15.lhe'),
-    firstEvent = cms.untracked.uint32(1+NTRIALS*NJOB)
+    fileNames = cms.untracked.vstring('file:/eos/uscms/store/user/bpollack/lhe/h_ggH_WW_ZGamma_125_15.lhe')
 )
 
 process.options = cms.untracked.PSet(
@@ -55,7 +49,7 @@ process.RAWSIMoutput = cms.OutputModule("PoolOutputModule",
     splitLevel = cms.untracked.int32(0),
     eventAutoFlushCompressedSize = cms.untracked.int32(5242880),
     outputCommands = process.RAWSIMEventContent.outputCommands,
-    fileName = cms.untracked.string('PYTHIA8_POWHEG_H_Zg_8TeV_cff_py_GEN_SIM_NJOB.root'),
+    fileName = cms.untracked.string('PYTHIA8_POWHEG_H_Zg_8TeV_cff_py_GEN_SIM.root'),
     dataset = cms.untracked.PSet(
         filterName = cms.untracked.string(''),
         dataTier = cms.untracked.string('GEN-SIM')
@@ -72,7 +66,7 @@ process.genstepfilter.triggerConditions=cms.vstring("generation_step")
 from Configuration.AlCa.GlobalTag import GlobalTag
 process.GlobalTag = GlobalTag(process.GlobalTag, 'START53_V27::All', '')
 
-process.generator = cms.EDFilter("Pythia8HadronizerFilter",
+process.generator = cms.EDFilter("Pythia8175HadronizerFilter",
     pythiaPylistVerbosity = cms.untracked.int32(1),
     filterEfficiency = cms.untracked.double(1.0),
     pythiaHepMCVerbosity = cms.untracked.bool(False),
