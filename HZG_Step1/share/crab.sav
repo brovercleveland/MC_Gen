@@ -1,3 +1,0 @@
--jobtype=cmssw
--cfg=crabGenMC_Step1.cfg
--scheduler=condor
