@@ -26,15 +26,16 @@ from IOMC.RandomEngine.RandomServiceHelper import RandomNumberServiceHelper
 randSvc = RandomNumberServiceHelper(process.RandomNumberGeneratorService)
 randSvc.populate()
 
-customSeed = 8675309+NTRIALS*NJOB
-process.RandomNumberGeneratorService.generator.initialSeed = customSeed
+#customSeed = 8675309+NTRIALS*NJOB
+#process.RandomNumberGeneratorService.generator.initialSeed = customSeed
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(NTRIALS)
+    #input = cms.untracked.int32(NTRIALS)
+    input = cms.untracked.int32(1)
 )
 
 # Input source
 process.source = cms.Source("EmptySource",
-    firstEvent = cms.untracked.uint32(1+NTRIALS*NJOB)
+    #firstEvent = cms.untracked.uint32(1+NTRIALS*NJOB)
 )
 
 process.options = cms.untracked.PSet(
@@ -71,7 +72,7 @@ process.genstepfilter.triggerConditions=cms.vstring("generation_step")
 from Configuration.AlCa.GlobalTag import GlobalTag
 process.GlobalTag = GlobalTag(process.GlobalTag, 'START53_V27::All', '')
 
-process.generator = cms.EDFilter("Pythia8GeneratorFilter",
+process.generator = cms.EDFilter("Pythia8175GeneratorFilter",
     pythiaPylistVerbosity = cms.untracked.int32(1),
     filterEfficiency = cms.untracked.double(1.0),
     pythiaHepMCVerbosity = cms.untracked.bool(False),

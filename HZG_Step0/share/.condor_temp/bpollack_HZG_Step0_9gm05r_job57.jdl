@@ -1,0 +1,20 @@
+Universe  = vanilla
+environment = CONDOR_ID=$(Cluster).$(Process)
+log     = CMSSW_57.log
+x509userproxy = /tmp/x509up_u44397
+stream_output = false
+stream_error  = false
+notification  = never
+should_transfer_files   = YES
+when_to_transfer_output = ON_EXIT
+copy_to_spool           = false
+transfer_input_files = /uscms_data/d2/bpollack/genProd/CMSSW_5_3_13_cand1/src/MC_Gen/HZG_Step0/share/default.tgz,/uscms_data/d2/bpollack/genProd/CMSSW_5_3_13_cand1/src/MC_Gen/HZG_Step0/share/arguments.xml,/uscms_data/d2/bpollack/genProd/CMSSW_5_3_13_cand1/src/MC_Gen/HZG_Step0/job/CMSSW.sh
+Executable = /uscms_data/d2/bpollack/genProd/CMSSW_5_3_13_cand1/src/MC_Gen/HZG_Step0//job//CMSSW.sh
++BLTaskID = "bpollack_HZG_Step0_9gm05r"
+Arguments  = 57 2
+output  = CMSSW_57.stdout
+error   = CMSSW_57.stderr
+transfer_output_remaps   = "CMSSW_57.stderr=/dev/null; CMSSW_57.stdout=/dev/null"
+log     = CMSSW_57.log
+transfer_output_files   = out_files_57.tgz,crab_fjr_57.xml
+Queue 1

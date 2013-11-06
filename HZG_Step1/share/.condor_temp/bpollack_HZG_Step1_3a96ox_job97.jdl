@@ -1,0 +1,55 @@
+Universe  = vanilla
+environment = CONDOR_ID=$(Cluster).$(Process)
+log     = CMSSW_4.log
+x509userproxy = /tmp/x509up_u44397
+stream_output = false
+stream_error  = false
+notification  = never
+should_transfer_files   = YES
+when_to_transfer_output = ON_EXIT
+copy_to_spool           = false
+transfer_input_files = /uscms_data/d2/bpollack/genProd/CMSSW_5_3_13_cand1/src/MC_Gen/HZG_Step1/share/default.tgz,/uscms_data/d2/bpollack/genProd/CMSSW_5_3_13_cand1/src/MC_Gen/HZG_Step1/share/arguments.xml,/uscms_data/d2/bpollack/genProd/CMSSW_5_3_13_cand1/src/MC_Gen/HZG_Step1/job/CMSSW.sh
+Executable = /uscms_data/d2/bpollack/genProd/CMSSW_5_3_13_cand1/src/MC_Gen/HZG_Step1//job//CMSSW.sh
++BLTaskID = "bpollack_HZG_Step1_3a96ox"
+Arguments  = 4 2
+output  = CMSSW_4.stdout
+error   = CMSSW_4.stderr
+transfer_output_remaps   = "CMSSW_4.stderr=/dev/null; CMSSW_4.stdout=/dev/null"
+log     = CMSSW_4.log
+transfer_output_files   = out_files_4.tgz,crab_fjr_4.xml
+Queue 1
+Arguments  = 37 2
+output  = CMSSW_37.stdout
+error   = CMSSW_37.stderr
+transfer_output_remaps   = "CMSSW_37.stderr=/dev/null; CMSSW_37.stdout=/dev/null"
+log     = CMSSW_37.log
+transfer_output_files   = out_files_37.tgz,crab_fjr_37.xml
+Queue 1
+Arguments  = 39 2
+output  = CMSSW_39.stdout
+error   = CMSSW_39.stderr
+transfer_output_remaps   = "CMSSW_39.stderr=/dev/null; CMSSW_39.stdout=/dev/null"
+log     = CMSSW_39.log
+transfer_output_files   = out_files_39.tgz,crab_fjr_39.xml
+Queue 1
+Arguments  = 40 2
+output  = CMSSW_40.stdout
+error   = CMSSW_40.stderr
+transfer_output_remaps   = "CMSSW_40.stderr=/dev/null; CMSSW_40.stdout=/dev/null"
+log     = CMSSW_40.log
+transfer_output_files   = out_files_40.tgz,crab_fjr_40.xml
+Queue 1
+Arguments  = 60 2
+output  = CMSSW_60.stdout
+error   = CMSSW_60.stderr
+transfer_output_remaps   = "CMSSW_60.stderr=/dev/null; CMSSW_60.stdout=/dev/null"
+log     = CMSSW_60.log
+transfer_output_files   = out_files_60.tgz,crab_fjr_60.xml
+Queue 1
+Arguments  = 97 2
+output  = CMSSW_97.stdout
+error   = CMSSW_97.stderr
+transfer_output_remaps   = "CMSSW_97.stderr=/dev/null; CMSSW_97.stdout=/dev/null"
+log     = CMSSW_97.log
+transfer_output_files   = out_files_97.tgz,crab_fjr_97.xml
+Queue 1
