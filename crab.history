@@ -254,3 +254,6 @@
 131130_160640: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -get -c HZG_Step2_175_v4/
 131130_160654: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -status -c HZG_Step2_175_v4/
 131130_160703: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -publish -c HZG_Step2_175_v4/
+131203_071906: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -create -cfg crabGenMC_Step0.cfg -submit
+131203_072311: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -status -c HZG_Step0_175_EmVeto
+131203_072349: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -status -c HZG_Step0_175_EmVeto
