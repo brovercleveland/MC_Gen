@@ -31,7 +31,7 @@ import os
 
 step = raw_input('enter step 0, 1, or 2: ')
 if int(step) == 0:
-  os.system('cmsDriver.py PYTHIA8_POWHEG_EmVeto_H_Zg_8TeV_cff.py \
+  os.system('cmsDriver.py PYTHIA8_POWHEG_H_Zg_8TeV_cff.py \
       --step GEN,SIM \
       --conditions START53_V27::All \
       --pileup NoPileUp \
@@ -41,7 +41,7 @@ if int(step) == 0:
       --filein=file:/eos/uscms/store/user/bpollack/lhe/h_ggH_WW_ZGamma_125_15.lhe \
       --no_exec')
 elif int(step) == 1:
-  os.system('cmsDriver.py REDIGI_PYTHIA8_POWHEG_EmVeto_H_Zg_8TeV \
+  os.system('cmsDriver.py REDIGI_PYTHIA8_POWHEG_H_Zg_8TeV \
       --step DIGI,L1,DIGI2RAW,HLT:7E33v2 \
       --conditions START53_V27::All \
       --pileup 2012_Summer_50ns_PoissonOOTPU \
@@ -49,10 +49,10 @@ elif int(step) == 1:
       --datamix NODATAMIXER \
       --eventcontent RAWSIM \
       --datatier GEN-SIM-RAW \
-      --filein file:PYTHIA8_POWHEG_EmVeto_H_Zg_8TeV_cff_py_GEN_SIM.root \
+      --filein file:PYTHIA8_POWHEG_H_Zg_8TeV_cff_py_GEN_SIM.root \
       --no_exec')
 elif int(step) == 2:
-  os.system('cmsDriver.py STEP2_PYTHIA8_POWHEG_EmVeto_H_Zg_8TeV \
+  os.system('cmsDriver.py STEP2_PYTHIA8_POWHEG_H_Zg_8TeV \
       --step RAW2DIGI,L1Reco,RECO,VALIDATION:validation_prod,DQM:DQMOfflinePOGMC \
       --conditions START53_V27::All \
       --pileup 2012_Summer_50ns_PoissonOOTPU \
@@ -60,7 +60,7 @@ elif int(step) == 2:
       --datamix NODATAMIXER \
       --eventcontent AODSIM,DQM \
       --datatier AODSIM,DQM \
-      --filein file:REDIGI_PYTHIA8_POWHEG_EmVeto_H_Zg_8TeV_DIGI_L1_DIGI2RAW_HLT_PU.root \
+      --filein file:REDIGI_PYTHIA8_POWHEG_H_Zg_8TeV_DIGI_L1_DIGI2RAW_HLT_PU.root \
       --no_exec')
 else:
   print 'how did you fuck this up?'
