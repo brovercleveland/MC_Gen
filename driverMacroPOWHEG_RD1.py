@@ -46,6 +46,7 @@ elif int(step) == 1:
       --runsScenarioForMC Run2012_AB_C_D_oneRunPerEra \
       --conditions START53_V7N::All \
       --pileup fromDB\
+      --pileup_input dbs:/RelValMinBias/CMSSW_5_2_1-START52_V4-v1/GEN-SIM \
       --datamix NODATAMIXER \
       --eventcontent RAWSIM \
       --datatier GEN-SIM-RAW \
@@ -54,9 +55,9 @@ elif int(step) == 1:
 elif int(step) == 2:
   os.system('cmsDriver.py STEP2_PYTHIA8_POWHEG_RD1_H_Zg_8TeV \
       --step RAW2DIGI,L1Reco,RECO,VALIDATION:validation_prod,DQM:DQMOfflinePOGMC \
-      --runsScenarioForMC Run2012_AB_C_D_oneRunPerEra \
       --conditions START53_V7N::All \
       --pileup fromDB\
+      --pileup_input dbs:/RelValMinBias/CMSSW_5_2_1-START52_V4-v1/GEN-SIM \
       --datamix NODATAMIXER \
       --eventcontent AODSIM,DQM \
       --datatier AODSIM,DQM \
