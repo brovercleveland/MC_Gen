@@ -296,3 +296,27 @@
 131206_023549: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -status -c HZG_Step2_175_EmVeto/
 131206_023559: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -publish -c HZG_Step2_175_EmVeto/
 131209_091403: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -create -cfg crabGenMC_Step0.cfg -submit
+131209_102827: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -status -c HZG_Step0_175_RD1
+131209_103136: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -status -c HZG_Step0_175_RD1
+131210_034745: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -status -c HZG_Step0_175_RD1
+131210_034802: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -get -c HZG_Step0_175_RD1
+131210_034949: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -status -c HZG_Step0_175_RD1
+131210_040523: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -status -c HZG_Step0_175_RD1
+131210_045714: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -status -c HZG_Step0_175_RD1
+131210_045722: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -get -c HZG_Step0_175_RD1
+131210_045725: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -status -c HZG_Step0_175_RD1
+131210_045734: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -publish -c HZG_Step0_175_RD1
+131210_055444: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -create -cfg crabGenMC_Step1.cfg -submit
+131210_070240: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -status -c HZG_Step1_175_RD1
+131210_080055: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -status -c HZG_Step1_175_RD1
+131210_080123: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -get -c HZG_Step1_175_RD1
+131211_041258: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -status -c HZG_Step1_175_RD1
+131211_041325: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -get -c HZG_Step1_175_RD1
+131211_042126: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -status -c HZG_Step1_175_RD1
+131211_042137: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -publishNoInp -c HZG_Step1_175_RD1
+131211_054642: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -create -cfg crabGenMC_Step2.cfg -submit
+131211_084707: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -status -c HZG_Step2_175_RD1
+131211_084730: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -get -c HZG_Step2_175_RD1
+131211_084804: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -status -c HZG_Step2_175_RD1
+131211_084813: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -publish -c HZG_Step2_175_RD1
+131211_085418: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -publish -c HZG_Step2_175_RD1
