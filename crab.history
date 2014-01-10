@@ -320,3 +320,4 @@
 131211_084804: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -status -c HZG_Step2_175_RD1
 131211_084813: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -publish -c HZG_Step2_175_RD1
 131211_085418: /uscmst1/prod/grid/CRAB_2_9_1/python/crab.py -publish -c HZG_Step2_175_RD1
+140110_164351: /uscmst1/prod/grid/CRAB_2_10_2_patch1/python/crab.py -create -cfg crabGenMC_Step0.cfg -submit
