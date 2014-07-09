@@ -336,3 +336,4 @@
 140114_132707: /uscmst1/prod/grid/CRAB_2_10_2_patch1/python/crab.py -status -c HZG_Step0_175_VH
 140114_132720: /uscmst1/prod/grid/CRAB_2_10_2_patch1/python/crab.py -get -c HZG_Step0_175_VH
 140114_153109: /uscmst1/prod/grid/CRAB_2_10_2_patch1/python/crab.py -status -c HZG_Step0_175_VH
+140709_142116: /cvmfs/cms.cern.ch/crab/CRAB_2_10_6/python/crab.py -create -cfg crabGenMC_Step0.cfg -submit
