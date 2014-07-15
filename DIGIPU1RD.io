@@ -1,0 +1,1 @@
+{"GT": "RD53_V0B::All", "FEVTDEBUGHLToutput": "file:step2.root", "primary": ["file:step2_SIM.root"]}

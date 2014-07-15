@@ -42,10 +42,11 @@ if int(step) == 0:
 elif int(step) == 1:
   os.system('cmsDriver.py REDIGI \
       --step DIGI,L1,DIGI2RAW,HLT:7E33v2 \
+      --runsAndWeightsForMC "[(194533,5.3),(200519,7.0),(206859,7.3)]" \
       --runsScenarioForMC Run2012_AB_C_D_oneRunPerEra \
-      --conditions START53_V7N::All \
-      --pileup_input dbs:/RelValMinBias/CMSSW_5_2_1-START52_V4-v1/GEN-SIM \
       --pileup fromDB\
+      --pileup_input "dbs:/MinBias_TuneZ2star_8TeV-pythia6/Summer12-START50_V13-v3/GEN-SIM" \
+      --conditions START53_V7N::All \
       --datamix NODATAMIXER \
       --eventcontent RAWSIM \
       --datatier GEN-SIM-RAW \
@@ -54,6 +55,7 @@ elif int(step) == 1:
 elif int(step) == 2:
   os.system('cmsDriver.py STEP2 \
       --step RAW2DIGI,L1Reco,RECO,VALIDATION:validation_prod,DQM:DQMOfflinePOGMC \
+      --runsAndWeightsForMC "[(194533,5.3),(200519,7.0),(206859,7.3)]" \
       --runsScenarioForMC Run2012_AB_C_D_oneRunPerEra \
       --conditions START53_V7N::All \
       --pileup_input dbs:/RelValMinBias/CMSSW_5_2_1-START52_V4-v1/GEN-SIM \

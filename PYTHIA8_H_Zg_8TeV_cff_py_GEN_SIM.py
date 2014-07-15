@@ -1,7 +1,7 @@
 # Auto generated configuration file
-# using: 
-# Revision: 1.381.2.28 
-# Source: /local/reps/CMSSW/CMSSW/Configuration/PyReleaseValidation/python/ConfigBuilder.py,v 
+# using:
+# Revision: 1.381.2.28
+# Source: /local/reps/CMSSW/CMSSW/Configuration/PyReleaseValidation/python/ConfigBuilder.py,v
 # with command line options: PYTHIA8_H_Zg_8TeV_cff.py --step GEN,SIM --conditions START53_V7N::All --pileup NoPileUp --datamix NODATAMIXER --eventcontent RAWSIM --datatier GEN-SIM --no_exec
 import FWCore.ParameterSet.Config as cms
 
@@ -24,7 +24,7 @@ process.load('Configuration.StandardSequences.EndOfProcess_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(1)
+    input = cms.untracked.int32(20)
 )
 
 # Input source
@@ -71,14 +71,14 @@ process.generator = cms.EDFilter("Pythia8175GeneratorFilter",
     comEnergy = cms.double(8000),
     maxEventsToPrint = cms.untracked.int32(1),
     PythiaParameters = cms.PSet(
-        processParameters = cms.vstring('Tune:pp = 5', 
-            'PDF:pSet = 7', 
-            'HiggsSM:gg2H = on', 
-            '25:m0 = 200.0', 
-            '25:onMode = off', 
-            '25:onIfMatch = 23 22', 
-            '23:mMin = 50.0', 
-            '23:onMode = off', 
+        processParameters = cms.vstring('Tune:pp = 5',
+            'PDF:pSet = 7',
+            'HiggsSM:gg2H = on',
+            '25:m0 = 200.0',
+            '25:onMode = off',
+            '25:onIfMatch = 23 22',
+            '23:mMin = 50.0',
+            '23:onMode = off',
             '23:onIfAny = 11 13 15'),
         parameterSets = cms.vstring('processParameters')
     )
@@ -96,5 +96,5 @@ process.RAWSIMoutput_step = cms.EndPath(process.RAWSIMoutput)
 process.schedule = cms.Schedule(process.generation_step,process.genfiltersummary_step,process.simulation_step,process.endjob_step,process.RAWSIMoutput_step)
 # filter all path with the production filter sequence
 for path in process.paths:
-	getattr(process,path)._seq = process.generator * getattr(process,path)._seq 
+	getattr(process,path)._seq = process.generator * getattr(process,path)._seq
 
