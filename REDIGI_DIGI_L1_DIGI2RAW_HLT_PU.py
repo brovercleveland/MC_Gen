@@ -2,7 +2,7 @@
 # using:
 # Revision: 1.381.2.28
 # Source: /local/reps/CMSSW/CMSSW/Configuration/PyReleaseValidation/python/ConfigBuilder.py,v
-# with command line options: REDIGI --step DIGI,L1,DIGI2RAW,HLT:7E33v2 --runsAndWeightsForMC [(194533,5.3),(200519,7.0),(206859,7.3)] --runsScenarioForMC Run2012_AB_C_D_oneRunPerEra --conditions START53_V7N::All --pileup_input dbs:/RelValMinBias/CMSSW_5_2_1-START52_V4-v1/GEN-SIM --pileup fromDB --datamix NODATAMIXER --eventcontent RAWSIM --datatier GEN-SIM-RAW --filein file:PYTHIA8_H_Zg_8TeV_cff_py_GEN_SIM.root --no_exec
+# with command line options: REDIGI --step DIGI,L1,DIGI2RAW,HLT:7E33v2 --conditions START53_V27::All --pileup 2012_Summer_50ns_PoissonOOTPU --pileup_input dbs:/RelValMinBias/CMSSW_5_2_1-START52_V4-v1/GEN-SIM --datamix NODATAMIXER --eventcontent RAWSIM --datatier GEN-SIM-RAW --filein file:PYTHIA8_H_Zg_8TeV_cff_py_GEN_SIM.root --no_exec
 import FWCore.ParameterSet.Config as cms
 
 process = cms.Process('HLT')
@@ -12,7 +12,7 @@ process.load('Configuration.StandardSequences.Services_cff')
 process.load('SimGeneral.HepPDTESSource.pythiapdt_cfi')
 process.load('FWCore.MessageService.MessageLogger_cfi')
 process.load('Configuration.EventContent.EventContent_cff')
-process.load('SimGeneral.MixingModule.mix_fromDB_cfi')
+process.load('SimGeneral.MixingModule.mix_2012_Summer_50ns_PoissonOOTPU_cfi')
 process.load('Configuration.StandardSequences.GeometryRecoDB_cff')
 process.load('Configuration.StandardSequences.MagneticField_38T_cff')
 process.load('Configuration.StandardSequences.Digi_cff')
@@ -23,14 +23,13 @@ process.load('Configuration.StandardSequences.EndOfProcess_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(20)
+    input = cms.untracked.int32(1)
 )
 
 # Input source
 process.source = cms.Source("PoolSource",
     secondaryFileNames = cms.untracked.vstring(),
-    fileNames = cms.untracked.vstring('file:PYTHIA8_H_Zg_8TeV_cff_py_GEN_SIM.root'),
-    setRunNumber = cms.untracked.uint32(200519)
+    fileNames = cms.untracked.vstring('file:PYTHIA8_H_Zg_8TeV_cff_py_GEN_SIM.root')
 )
 
 process.options = cms.untracked.PSet(
@@ -60,11 +59,9 @@ process.RAWSIMoutput = cms.OutputModule("PoolOutputModule",
 # Additional output definition
 
 # Other statements
-import SimGeneral.Configuration.ThrowAndSetRandomRun as ThrowAndSetRandomRun
-ThrowAndSetRandomRun.throwAndSetRandomRun(process.source,[(194533, 5.2999999999999998), (200519, 7.0), (206859, 7.2999999999999998)])
 process.mix.input.fileNames = cms.untracked.vstring(['/store/relval/CMSSW_5_2_1/RelValMinBias/GEN-SIM/START52_V4-v1/0003/4C958749-9872-E111-A747-003048F1183E.root', '/store/relval/CMSSW_5_2_1/RelValMinBias/GEN-SIM/START52_V4-v1/0002/5A081FCB-6772-E111-9623-0025B3244166.root'])
 from Configuration.AlCa.GlobalTag import GlobalTag
-process.GlobalTag = GlobalTag(process.GlobalTag, 'START53_V7N::All', '')
+process.GlobalTag = GlobalTag(process.GlobalTag, 'START53_V27::All', '')
 
 # Path and EndPath definitions
 process.digitisation_step = cms.Path(process.pdigi)

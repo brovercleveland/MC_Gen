@@ -48,9 +48,20 @@ elif int(step) == 1:
       --datamix NODATAMIXER \
       --eventcontent RAWSIM \
       --datatier GEN-SIM-RAW \
-      --filein file:PYTHIA8_POWHEG_H_Zg_8TeV_cff_py_GEN_SIM.root \
+      --filein file:PYTHIA8_H_Zg_8TeV_cff_py_GEN_SIM.root \
       --no_exec')
 elif int(step) == 2:
+  os.system('cmsDriver.py STEP2 \
+      --step RAW2DIGI,L1Reco,RECO,VALIDATION:validation_prod \
+      --conditions START53_V27::All \
+      --pileup 2012_Summer_50ns_PoissonOOTPU \
+      --pileup_input dbs:/RelValMinBias/CMSSW_5_2_1-START52_V4-v1/GEN-SIM \
+      --datamix NODATAMIXER \
+      --eventcontent AODSIM \
+      --datatier AODSIM \
+      --filein file:REDIGI_DIGI_L1_DIGI2RAW_HLT_PU.root \
+      --no_exec')
+elif int(step) == 3:
   os.system('cmsDriver.py STEP2 \
       --step RAW2DIGI,L1Reco,RECO,VALIDATION:validation_prod,DQM:DQMOfflinePOGMC \
       --conditions START53_V27::All \
