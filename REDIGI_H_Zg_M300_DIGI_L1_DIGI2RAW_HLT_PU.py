@@ -1,8 +1,8 @@
 # Auto generated configuration file
-# using:
-# Revision: 1.381.2.28
-# Source: /local/reps/CMSSW/CMSSW/Configuration/PyReleaseValidation/python/ConfigBuilder.py,v
-# with command line options: REDIGI --step DIGI,L1,DIGI2RAW,HLT:7E33v2 --conditions START53_V27::All --pileup 2012_Summer_50ns_PoissonOOTPU --pileup_input dbs:/RelValMinBias/CMSSW_5_2_1-START52_V4-v1/GEN-SIM --datamix NODATAMIXER --eventcontent RAWSIM --datatier GEN-SIM-RAW --filein file:PYTHIA8_H_Zg_8TeV_cff_py_GEN_SIM.root --no_exec
+# using: 
+# Revision: 1.381.2.28 
+# Source: /local/reps/CMSSW/CMSSW/Configuration/PyReleaseValidation/python/ConfigBuilder.py,v 
+# with command line options: REDIGI_H_Zg_M300 --step DIGI,L1,DIGI2RAW,HLT:7E33v2 --conditions START53_V27::All --pileup 2012_Summer_50ns_PoissonOOTPU --pileup_input dbs:/RelValMinBias/CMSSW_5_2_1-START52_V4-v1/GEN-SIM --datamix NODATAMIXER --eventcontent RAWSIM --datatier GEN-SIM-RAW --filein file:PYTHIA8_H_Zg_M300_8TeV_cff_py_GEN_SIM.root -n 10 --no_exec
 import FWCore.ParameterSet.Config as cms
 
 process = cms.Process('HLT')
@@ -23,13 +23,13 @@ process.load('Configuration.StandardSequences.EndOfProcess_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(1)
+    input = cms.untracked.int32(10)
 )
 
 # Input source
 process.source = cms.Source("PoolSource",
     secondaryFileNames = cms.untracked.vstring(),
-    fileNames = cms.untracked.vstring('file:PYTHIA8_H_Zg_8TeV_cff_py_GEN_SIM.root')
+    fileNames = cms.untracked.vstring('file:PYTHIA8_H_Zg_M300_8TeV_cff_py_GEN_SIM.root')
 )
 
 process.options = cms.untracked.PSet(
@@ -39,7 +39,7 @@ process.options = cms.untracked.PSet(
 # Production Info
 process.configurationMetadata = cms.untracked.PSet(
     version = cms.untracked.string('$Revision: 1.381.2.28 $'),
-    annotation = cms.untracked.string('REDIGI nevts:1'),
+    annotation = cms.untracked.string('REDIGI_H_Zg_M300 nevts:10'),
     name = cms.untracked.string('PyReleaseValidation')
 )
 
@@ -49,7 +49,7 @@ process.RAWSIMoutput = cms.OutputModule("PoolOutputModule",
     splitLevel = cms.untracked.int32(0),
     eventAutoFlushCompressedSize = cms.untracked.int32(5242880),
     outputCommands = process.RAWSIMEventContent.outputCommands,
-    fileName = cms.untracked.string('REDIGI_DIGI_L1_DIGI2RAW_HLT_PU.root'),
+    fileName = cms.untracked.string('REDIGI_H_Zg_M300_DIGI_L1_DIGI2RAW_HLT_PU.root'),
     dataset = cms.untracked.PSet(
         filterName = cms.untracked.string(''),
         dataTier = cms.untracked.string('GEN-SIM-RAW')
@@ -59,7 +59,7 @@ process.RAWSIMoutput = cms.OutputModule("PoolOutputModule",
 # Additional output definition
 
 # Other statements
-process.mix.input.fileNames = cms.untracked.vstring(['/store/relval/CMSSW_5_2_1/RelValMinBias/GEN-SIM/START52_V4-v1/0003/4C958749-9872-E111-A747-003048F1183E.root', '/store/relval/CMSSW_5_2_1/RelValMinBias/GEN-SIM/START52_V4-v1/0002/5A081FCB-6772-E111-9623-0025B3244166.root'])
+process.mix.input.fileNames = cms.untracked.vstring([])
 from Configuration.AlCa.GlobalTag import GlobalTag
 process.GlobalTag = GlobalTag(process.GlobalTag, 'START53_V27::All', '')
 
@@ -78,7 +78,7 @@ process.schedule.extend([process.endjob_step,process.RAWSIMoutput_step])
 # customisation of the process.
 
 # Automatic addition of the customisation function from HLTrigger.Configuration.customizeHLTforMC
-from HLTrigger.Configuration.customizeHLTforMC import customizeHLTforMC
+from HLTrigger.Configuration.customizeHLTforMC import customizeHLTforMC 
 
 #call to customisation function customizeHLTforMC imported from HLTrigger.Configuration.customizeHLTforMC
 process = customizeHLTforMC(process)

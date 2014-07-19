@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import os
+import os,sys
 
 
 #os.system('cmsDriver.py POWHEG_PYTHIA8_H_Zg_8TeV_cff.py -s GEN,SIM,DIGI,L1,DIGI2RAW,HLT,RAW2DIGI,RECO --beamspot Realistic8TeVCollision --conditions auto:startup --pileup 2012_Startup_50ns_PoissonOOTPU --datatier GEN-SIM-RECO --eventcontent RECOSIM -n 10 --no_exec')
@@ -28,19 +28,22 @@ import os
       #--eventcontent RAWSIM \
       #--datatier GEN-SIM \
       #--no_exec')
+print sys.argv
+if len(sys.argv) != 2: raise Exception('need a mass argument')
 
 step = raw_input('enter step 0, 1, or 2: ')
 if int(step) == 0:
-  os.system('cmsDriver.py PYTHIA8_H_Zg_8TeV_cff.py \
+  os.system('cmsDriver.py PYTHIA8_H_Zg_M{0}_8TeV_cff.py \
       --step GEN,SIM \
       --conditions START53_V27::All \
       --pileup NoPileUp \
       --datamix NODATAMIXER \
       --eventcontent RAWSIM \
       --datatier GEN-SIM \
-      --no_exec')
+      -n 10\
+      --no_exec'.format(sys.argv[1]))
 elif int(step) == 1:
-  os.system('cmsDriver.py REDIGI \
+  os.system('cmsDriver.py REDIGI_H_Zg_M{0} \
       --step DIGI,L1,DIGI2RAW,HLT:7E33v2 \
       --conditions START53_V27::All \
       --pileup 2012_Summer_50ns_PoissonOOTPU \
@@ -48,8 +51,9 @@ elif int(step) == 1:
       --datamix NODATAMIXER \
       --eventcontent RAWSIM \
       --datatier GEN-SIM-RAW \
-      --filein file:PYTHIA8_H_Zg_8TeV_cff_py_GEN_SIM.root \
-      --no_exec')
+      --filein file:PYTHIA8_H_Zg_M{0}_8TeV_cff_py_GEN_SIM.root \
+      -n 10\
+      --no_exec'.format(sys.argv[1]))
 elif int(step) == 2:
   os.system('cmsDriver.py STEP2 \
       --step RAW2DIGI,L1Reco,RECO,VALIDATION:validation_prod \
