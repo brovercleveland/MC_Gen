@@ -2,7 +2,7 @@
 # using:
 # Revision: 1.381.2.28
 # Source: /local/reps/CMSSW/CMSSW/Configuration/PyReleaseValidation/python/ConfigBuilder.py,v
-# with command line options: PYTHIA8_H_Zg_8TeV_cff.py --step GEN,SIM --conditions START53_V27::All --pileup NoPileUp --datamix NODATAMIXER --eventcontent RAWSIM --datatier GEN-SIM --no_exec
+# with command line options: PYTHIA8_H_Zg_8TeV_cff.py --step GEN,SIM --conditions START53_V7N::All --pileup NoPileUp --datamix NODATAMIXER --eventcontent RAWSIM --datatier GEN-SIM --no_exec
 import FWCore.ParameterSet.Config as cms
 
 process = cms.Process('SIM')
@@ -22,21 +22,13 @@ process.load('GeneratorInterface.Core.genFilterSummary_cff')
 process.load('Configuration.StandardSequences.SimIdeal_cff')
 process.load('Configuration.StandardSequences.EndOfProcess_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
-from IOMC.RandomEngine.RandomServiceHelper import RandomNumberServiceHelper
-randSvc = RandomNumberServiceHelper(process.RandomNumberGeneratorService)
-randSvc.populate()
 
-#customSeed = 8675309+NTRIALS*NJOB
-#process.RandomNumberGeneratorService.generator.initialSeed = customSeed
 process.maxEvents = cms.untracked.PSet(
-    #input = cms.untracked.int32(NTRIALS)
-    input = cms.untracked.int32(1)
+    input = cms.untracked.int32(20)
 )
 
 # Input source
-process.source = cms.Source("EmptySource",
-    #firstEvent = cms.untracked.uint32(1+NTRIALS*NJOB)
-)
+process.source = cms.Source("EmptySource")
 
 process.options = cms.untracked.PSet(
 
@@ -55,7 +47,7 @@ process.RAWSIMoutput = cms.OutputModule("PoolOutputModule",
     splitLevel = cms.untracked.int32(0),
     eventAutoFlushCompressedSize = cms.untracked.int32(5242880),
     outputCommands = process.RAWSIMEventContent.outputCommands,
-    fileName = cms.untracked.string('PYTHIA8_H_Zg_8TeV_cff_py_GEN_SIM_NJOB.root'),
+    fileName = cms.untracked.string('PYTHIA8_H_Zg_8TeV_cff_py_GEN_SIM.root'),
     dataset = cms.untracked.PSet(
         filterName = cms.untracked.string(''),
         dataTier = cms.untracked.string('GEN-SIM')
@@ -70,7 +62,7 @@ process.RAWSIMoutput = cms.OutputModule("PoolOutputModule",
 # Other statements
 process.genstepfilter.triggerConditions=cms.vstring("generation_step")
 from Configuration.AlCa.GlobalTag import GlobalTag
-process.GlobalTag = GlobalTag(process.GlobalTag, 'START53_V27::All', '')
+process.GlobalTag = GlobalTag(process.GlobalTag, 'START53_V7N::All', '')
 
 process.generator = cms.EDFilter("Pythia8175GeneratorFilter",
     pythiaPylistVerbosity = cms.untracked.int32(1),
@@ -80,9 +72,9 @@ process.generator = cms.EDFilter("Pythia8175GeneratorFilter",
     maxEventsToPrint = cms.untracked.int32(1),
     PythiaParameters = cms.PSet(
         processParameters = cms.vstring('Tune:pp = 5',
-            'PDF:pSet = 5',
+            'PDF:pSet = 7',
             'HiggsSM:gg2H = on',
-            '25:m0 = 125.0',
+            '25:m0 = 200.0',
             '25:onMode = off',
             '25:onIfMatch = 23 22',
             '23:mMin = 50.0',

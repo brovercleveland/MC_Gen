@@ -55,7 +55,7 @@ elif int(step) == 1:
       -n 10\
       --no_exec'.format(sys.argv[1]))
 elif int(step) == 2:
-  os.system('cmsDriver.py STEP2 \
+  os.system('cmsDriver.py STEP2_H_Zg_M{0} \
       --step RAW2DIGI,L1Reco,RECO,VALIDATION:validation_prod \
       --conditions START53_V27::All \
       --pileup 2012_Summer_50ns_PoissonOOTPU \
@@ -63,8 +63,13 @@ elif int(step) == 2:
       --datamix NODATAMIXER \
       --eventcontent AODSIM \
       --datatier AODSIM \
-      --filein file:REDIGI_DIGI_L1_DIGI2RAW_HLT_PU.root \
-      --no_exec')
+      --filein file:REDIGI_H_Zg_M{0}_DIGI_L1_DIGI2RAW_HLT_PU.root \
+      -n 10\
+      --no_exec'.format(sys.argv[1]))
+
+
+
+# old step, DQM still there
 elif int(step) == 3:
   os.system('cmsDriver.py STEP2 \
       --step RAW2DIGI,L1Reco,RECO,VALIDATION:validation_prod,DQM:DQMOfflinePOGMC \

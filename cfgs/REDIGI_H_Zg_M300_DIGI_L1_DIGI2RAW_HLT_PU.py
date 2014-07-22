@@ -1,7 +1,7 @@
 # Auto generated configuration file
-# using: 
-# Revision: 1.381.2.28 
-# Source: /local/reps/CMSSW/CMSSW/Configuration/PyReleaseValidation/python/ConfigBuilder.py,v 
+# using:
+# Revision: 1.381.2.28
+# Source: /local/reps/CMSSW/CMSSW/Configuration/PyReleaseValidation/python/ConfigBuilder.py,v
 # with command line options: REDIGI_H_Zg_M300 --step DIGI,L1,DIGI2RAW,HLT:7E33v2 --conditions START53_V27::All --pileup 2012_Summer_50ns_PoissonOOTPU --pileup_input dbs:/RelValMinBias/CMSSW_5_2_1-START52_V4-v1/GEN-SIM --datamix NODATAMIXER --eventcontent RAWSIM --datatier GEN-SIM-RAW --filein file:PYTHIA8_H_Zg_M300_8TeV_cff_py_GEN_SIM.root -n 10 --no_exec
 import FWCore.ParameterSet.Config as cms
 
@@ -59,7 +59,7 @@ process.RAWSIMoutput = cms.OutputModule("PoolOutputModule",
 # Additional output definition
 
 # Other statements
-process.mix.input.fileNames = cms.untracked.vstring([])
+process.mix.input.fileNames = cms.untracked.vstring(['/store/relval/CMSSW_5_2_1/RelValMinBias/GEN-SIM/START52_V4-v1/0003/4C958749-9872-E111-A747-003048F1183E.root', '/store/relval/CMSSW_5_2_1/RelValMinBias/GEN-SIM/START52_V4-v1/0002/5A081FCB-6772-E111-9623-0025B3244166.root'])
 from Configuration.AlCa.GlobalTag import GlobalTag
 process.GlobalTag = GlobalTag(process.GlobalTag, 'START53_V27::All', '')
 
@@ -78,7 +78,7 @@ process.schedule.extend([process.endjob_step,process.RAWSIMoutput_step])
 # customisation of the process.
 
 # Automatic addition of the customisation function from HLTrigger.Configuration.customizeHLTforMC
-from HLTrigger.Configuration.customizeHLTforMC import customizeHLTforMC 
+from HLTrigger.Configuration.customizeHLTforMC import customizeHLTforMC
 
 #call to customisation function customizeHLTforMC imported from HLTrigger.Configuration.customizeHLTforMC
 process = customizeHLTforMC(process)
