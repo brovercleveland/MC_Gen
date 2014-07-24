@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import os,sys
+import os,sys,glob
 
 
 #os.system('cmsDriver.py POWHEG_PYTHIA8_H_Zg_8TeV_cff.py -s GEN,SIM,DIGI,L1,DIGI2RAW,HLT,RAW2DIGI,RECO --beamspot Realistic8TeVCollision --conditions auto:startup --pileup 2012_Startup_50ns_PoissonOOTPU --datatier GEN-SIM-RECO --eventcontent RECOSIM -n 10 --no_exec')
@@ -83,4 +83,8 @@ elif int(step) == 3:
       --no_exec')
 else:
   print 'how did you fuck this up?'
+
+
+configFile = max(glob.iglob('*.py'), key=os.path.getctime)
+os.rename(configFile,'../cfgs/'+configFile)
 
