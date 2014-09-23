@@ -37,7 +37,7 @@ if len(sys.argv) != 2: raise Exception('need a mass argument')
 
 step = raw_input('enter step 0, 1, or 2: ')
 if int(step) == 0:
-  os.system('cmsDriver.py PYTHIA8_H_Zg_M{0}_8TeV_cff.py \
+  os.system('cmsDriver.py PYTHIA8_H_Zg_M{0}_Narrow_8TeV_cff.py \
       --step GEN,SIM \
       --conditions START53_V27::All \
       --pileup NoPileUp \
@@ -48,7 +48,7 @@ if int(step) == 0:
       --no_exec'.format(sys.argv[1]))
   moveFile()
 elif int(step) == 1:
-  os.system('cmsDriver.py REDIGI_H_Zg_M{0} \
+  os.system('cmsDriver.py REDIGI_H_Zg_M{0}_Narrow \
       --step DIGI,L1,DIGI2RAW,HLT:7E33v2 \
       --conditions START53_V27::All \
       --pileup 2012_Summer_50ns_PoissonOOTPU \
@@ -56,12 +56,12 @@ elif int(step) == 1:
       --datamix NODATAMIXER \
       --eventcontent RAWSIM \
       --datatier GEN-SIM-RAW \
-      --filein file:PYTHIA8_H_Zg_M{0}_8TeV_cff_py_GEN_SIM.root \
+      --filein file:PYTHIA8_H_Zg_M{0}_Narrow_8TeV_cff_py_GEN_SIM.root \
       -n 10\
       --no_exec'.format(sys.argv[1]))
   moveFile()
 elif int(step) == 2:
-  os.system('cmsDriver.py STEP2_H_Zg_M{0} \
+  os.system('cmsDriver.py STEP2_H_Zg_M{0}_Narrow \
       --step RAW2DIGI,L1Reco,RECO,VALIDATION:validation_prod \
       --conditions START53_V27::All \
       --pileup 2012_Summer_50ns_PoissonOOTPU \
@@ -69,7 +69,7 @@ elif int(step) == 2:
       --datamix NODATAMIXER \
       --eventcontent AODSIM \
       --datatier AODSIM \
-      --filein file:REDIGI_H_Zg_M{0}_DIGI_L1_DIGI2RAW_HLT_PU.root \
+      --filein file:REDIGI_H_Zg_M{0}_Narrow_DIGI_L1_DIGI2RAW_HLT_PU.root \
       -n 10\
       --no_exec'.format(sys.argv[1]))
   moveFile()
