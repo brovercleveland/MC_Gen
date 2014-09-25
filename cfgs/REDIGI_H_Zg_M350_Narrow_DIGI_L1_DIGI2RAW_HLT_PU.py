@@ -2,7 +2,7 @@
 # using:
 # Revision: 1.381.2.28
 # Source: /local/reps/CMSSW/CMSSW/Configuration/PyReleaseValidation/python/ConfigBuilder.py,v
-# with command line options: REDIGI_H_Zg_M200_Narrow --step DIGI,L1,DIGI2RAW,HLT:7E33v2 --conditions START53_V27::All --pileup 2012_Summer_50ns_PoissonOOTPU --pileup_input dbs:/RelValMinBias/CMSSW_5_2_1-START52_V4-v1/GEN-SIM --datamix NODATAMIXER --eventcontent RAWSIM --datatier GEN-SIM-RAW --filein file:PYTHIA8_H_Zg_M200_Narrow_8TeV_cff_py_GEN_SIM.root -n 10 --no_exec
+# with command line options: REDIGI_H_Zg_M350_Narrow --step DIGI,L1,DIGI2RAW,HLT:7E33v2 --conditions START53_V27::All --pileup 2012_Summer_50ns_PoissonOOTPU --pileup_input dbs:/RelValMinBias/CMSSW_5_2_1-START52_V4-v1/GEN-SIM --datamix NODATAMIXER --eventcontent RAWSIM --datatier GEN-SIM-RAW --filein file:PYTHIA8_H_Zg_M350_Narrow_8TeV_cff_py_GEN_SIM.root -n 10 --no_exec
 import FWCore.ParameterSet.Config as cms
 
 process = cms.Process('HLT')
@@ -23,13 +23,13 @@ process.load('Configuration.StandardSequences.EndOfProcess_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(25)
+    input = cms.untracked.int32(10)
 )
 
 # Input source
 process.source = cms.Source("PoolSource",
     secondaryFileNames = cms.untracked.vstring(),
-    fileNames = cms.untracked.vstring('file:PYTHIA8_H_Zg_M200_Narrow_8TeV_cff_py_GEN_SIM.root')
+    fileNames = cms.untracked.vstring('file:PYTHIA8_H_Zg_M350_Narrow_8TeV_cff_py_GEN_SIM.root')
 )
 
 process.options = cms.untracked.PSet(
@@ -39,7 +39,7 @@ process.options = cms.untracked.PSet(
 # Production Info
 process.configurationMetadata = cms.untracked.PSet(
     version = cms.untracked.string('$Revision: 1.381.2.28 $'),
-    annotation = cms.untracked.string('REDIGI_H_Zg_M200_Narrow nevts:10'),
+    annotation = cms.untracked.string('REDIGI_H_Zg_M350_Narrow nevts:10'),
     name = cms.untracked.string('PyReleaseValidation')
 )
 
@@ -49,7 +49,7 @@ process.RAWSIMoutput = cms.OutputModule("PoolOutputModule",
     splitLevel = cms.untracked.int32(0),
     eventAutoFlushCompressedSize = cms.untracked.int32(5242880),
     outputCommands = process.RAWSIMEventContent.outputCommands,
-    fileName = cms.untracked.string('REDIGI_H_Zg_M200_Narrow_DIGI_L1_DIGI2RAW_HLT_PU.root'),
+    fileName = cms.untracked.string('REDIGI_H_Zg_M350_Narrow_DIGI_L1_DIGI2RAW_HLT_PU.root'),
     dataset = cms.untracked.PSet(
         filterName = cms.untracked.string(''),
         dataTier = cms.untracked.string('GEN-SIM-RAW')
