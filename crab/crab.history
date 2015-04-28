@@ -755,3 +755,216 @@
 140925_170151: /cvmfs/cms.cern.ch/crab/CRAB_2_10_7_patch1/python/crab.py -status -get -c HZG_Step2_M500_Narrow/
 140925_170235: /cvmfs/cms.cern.ch/crab/CRAB_2_10_7_patch1/python/crab.py -status -get -c HZG_Step2_M250_Narrow/
 140925_170252: /cvmfs/cms.cern.ch/crab/CRAB_2_10_7_patch1/python/crab.py -status -get -c HZG_Step2_M250_Narrow/
+140926_080612: /cvmfs/cms.cern.ch/crab/CRAB_2_10_7_patch1/python/crab.py -status -get -c HZG_Step2_M250_Narrow/
+140926_080627: /cvmfs/cms.cern.ch/crab/CRAB_2_10_7_patch1/python/crab.py -status -get -c HZG_Step2_M250_Narrow/
+140926_080644: /cvmfs/cms.cern.ch/crab/CRAB_2_10_7_patch1/python/crab.py -publish -c HZG_Step2_M250_Narrow/
+140926_081106: /cvmfs/cms.cern.ch/crab/CRAB_2_10_7_patch1/python/crab.py -status -get -c HZG_Step2_M450_Narrow/
+140926_081144: /cvmfs/cms.cern.ch/crab/CRAB_2_10_7_patch1/python/crab.py -status -get -c HZG_Step2_M450_Narrow/
+140926_081154: /cvmfs/cms.cern.ch/crab/CRAB_2_10_7_patch1/python/crab.py -publish -c HZG_Step2_M450_Narrow/
+140926_081339: /cvmfs/cms.cern.ch/crab/CRAB_2_10_7_patch1/python/crab.py -status -get -c HZG_Step2_M500_Narrow/
+140926_081346: /cvmfs/cms.cern.ch/crab/CRAB_2_10_7_patch1/python/crab.py -status -get -c HZG_Step2_M500_Narrow/
+140926_081355: /cvmfs/cms.cern.ch/crab/CRAB_2_10_7_patch1/python/crab.py -publish -c HZG_Step2_M500_Narrow/
+140929_145554: /cvmfs/cms.cern.ch/crab/CRAB_2_10_7_patch1/python/crab.py -create -cfg crabGenMC_Step0.cfg -submit
+140929_161851: /cvmfs/cms.cern.ch/crab/CRAB_2_10_7_patch1/python/crab.py -status -get -c HZG_Step0_M200_Spin2/
+140930_144632: /cvmfs/cms.cern.ch/crab/CRAB_2_10_7_patch1/python/crab.py -status -get -c HZG_Step0_M200_Spin2/
+140930_144659: /cvmfs/cms.cern.ch/crab/CRAB_2_10_7_patch1/python/crab.py -status -get -c HZG_Step0_M200_Spin2/
+140930_152127: /cvmfs/cms.cern.ch/crab/CRAB_2_10_7_patch1/python/crab.py -resubmit bad -c HZG_Step0_M200_Spin2/
+140930_155549: /cvmfs/cms.cern.ch/crab/CRAB_2_10_7_patch1/python/crab.py -status -get -c HZG_Step0_M200_Spin2/
+140930_155558: /cvmfs/cms.cern.ch/crab/CRAB_2_10_7_patch1/python/crab.py -status -get -c HZG_Step0_M200_Spin2/
+150304_183234: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_Step0.cfg -submit
+150304_183305: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_Step0.cfg -submit
+150304_184548: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_Step0.cfg -submit
+150305_112233: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -c HZG_Step0_M1200/
+150305_112249: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -get -c HZG_Step0_M1200/
+150305_154719: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -c HZG_Step0_M1200/
+150305_154821: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step0_M1200/
+150305_162847: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_Step1.cfg -submit
+150305_190647: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1200/
+150306_145229: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1200/
+150306_145456: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1200/
+150306_150031: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_Step0.cfg -submit
+150307_171807: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1200/
+150307_171852: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1200/
+150307_171911: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step0_M1200/
+150307_172019: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_Step1.cfg -submit
+150307_172636: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1200/
+150308_114306: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1200/
+150308_114347: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1200/
+150308_114404: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step1_M1200/
+150308_115609: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_Step2.cfg -submit
+150308_140446: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M1200/
+150308_140524: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M1200/
+150308_140545: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -resubmit 200 -c HZG_Step2_M1200/
+150309_152623: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M1200/
+150309_152657: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M1200/
+150309_152722: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step2_M1200/
+150309_172659: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M800_Step0.cfg -submit
+150310_122701: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M1600_Step0.cfg -submit
+150310_124149: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M800/
+150310_124307: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M800/
+150310_124406: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step0_M800/
+150310_124734: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M800_Step1.cfg -submit
+150310_144055: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800/
+150310_144120: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1600/
+150310_172744: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1600/
+150310_172808: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800/
+150310_193807: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800/
+150312_145002: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800/
+150312_145036: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800/
+150312_145051: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step1_M800/
+150312_145701: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M800_Step2.cfg -submit
+150312_154954: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1200/
+150312_154958: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1600/
+150312_155032: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1600/
+150312_183134: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step0_M1600/
+150312_184018: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M1600_Step1.cfg -submit
+150312_184904: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M1600_Step1.cfg -submit
+150312_185704: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M1600_Step1.cfg -submit
+150313_111020: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M1600_Step1.cfg -submit
+150313_112203: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M1600_Step1.cfg -submit
+150313_112430: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M800/
+150313_112950: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M800/
+150313_113150: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step2_M800/
+150313_131809: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1600/
+150313_140616: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M800_Narrow_Step0.cfg -submit
+150313_140905: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M1200_Narrow_Step0.cfg -submit
+150313_141135: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M1600_Narrow_Step0.cfg -submit
+150313_142832: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1600/
+150313_150340: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1600/
+150313_150429: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M800_Narrow/
+150313_150450: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1200_Narrow/
+150313_150506: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1600_Narrow/
+150314_151150: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1600/
+150314_152118: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1600/
+150314_152135: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step1_M1600/
+150314_152432: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M1600_Step2.cfg -submit
+150314_152737: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M800_Narrow/
+150314_152812: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M800_Narrow/
+150314_152826: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1200_Narrow/
+150314_164704: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1200_Narrow/
+150314_164750: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1600_Narrow/
+150314_165329: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1600_Narrow/
+150314_172437: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M800_Narrow/
+150314_172455: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step0_M800_Narrow/
+150314_172619: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M800_Narrow_Step1.cfg -submit
+150314_172914: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1200_Narrow/
+150314_172932: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step0_M1200_Narrow/
+150314_173134: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M1200_Narrow_Step1.cfg -submit
+150314_173338: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step0_M1600_Narrow/
+150314_173507: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M1600_Narrow_Step1.cfg -submit
+150316_104050: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M1600/
+150316_104124: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M1600/
+150316_104214: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M1600/
+150316_104413: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M800_Narrow/
+150316_104643: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M1600/
+150316_105210: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step2_M1600/
+150316_110808: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800_Narrow/
+150316_110926: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800_Narrow/
+150316_111419: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1200_Narrow/
+150316_111518: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1200_Narrow/
+150316_111923: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1600_Narrow/
+150316_111957: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1600_Narrow/
+150316_114248: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800_Narrow/
+150316_114439: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step1_M800_Narrow/
+150316_114618: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1200_Narrow/
+150316_114646: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step1_M1200_Narrow/
+150316_115202: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1600_Narrow/
+150316_115428: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step1_M1600_Narrow/
+150316_115628: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M800_Narrow_Step2.cfg -submit
+150316_115751: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M1200_Narrow_Step2.cfg -submit
+150316_115912: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M1600_Narrow_Step2.cfg -submit
+150317_093418: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M800_Narrow/
+150317_094319: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M800_Narrow/
+150317_094401: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M1200_Narrow/
+150317_095014: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M1200_Narrow/
+150317_095206: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M1600_Narrow/
+150317_095708: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M1600_Narrow/
+150317_095722: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step2_M800_Narrow/
+150317_100332: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step2_M1200_Narrow/
+150317_101129: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step2_M1600_Narrow/
+150407_121149: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M800_Step0.cfg -submit
+150407_121203: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M800_Step0.cfg -submit
+150407_190459: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M800
+150407_192207: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M800
+150407_195009: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M800
+150410_124945: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M800
+150410_125032: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M800
+150410_125114: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step0_M800
+150410_132549: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step0_M800
+150410_132835: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M800_Step1.cfg -submit
+150411_115331: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800
+150411_115342: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800
+150411_115427: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800
+150411_121817: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step1_M800
+150411_122132: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M800_Step2.cfg -submit
+150412_171502: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M800
+150412_171558: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M800
+150412_171926: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step2_M800
+150413_211814: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M800_Step0.cfg -submit
+150413_212649: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M1200_Step0.cfg -submit
+150413_212804: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M1600_Step0.cfg -submit
+150414_104859: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M800
+150414_110859: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M800
+150414_110924: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1200
+150414_111224: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1200
+150414_130127: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1200
+150414_130213: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1200
+150414_130235: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M800
+150414_130252: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M800
+150414_130304: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1600
+150414_130326: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1600
+150414_131611: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1600
+150414_170502: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1600
+150415_122259: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M800
+150415_122358: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step0_M800
+150415_122451: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1200
+150415_122522: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step0_M1200
+150415_122636: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step0_M1600
+150415_122651: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step0_M1600
+150415_122849: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M800_Step1.cfg -submit
+150415_123001: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M800_Step1.cfg -submit
+150415_123604: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M1200_Step1.cfg -submit
+150415_123808: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M1600_Step1.cfg -submit
+150415_174357: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800
+150416_132320: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800
+150416_132426: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800
+150416_132438: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1200
+150416_132656: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1200
+150416_132718: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -resubmit bad -c HZG_Step1_M800
+150416_132740: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -resubmit bad -c HZG_Step1_M1200
+150416_132845: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -resubmit bad -c HZG_Step1_M1600
+150416_132858: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1600
+150416_133327: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1600
+150416_133853: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -resubmit bad -c HZG_Step1_M1600
+150416_134358: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800
+150416_150138: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800
+150416_151456: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800
+150416_155016: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800
+150416_155029: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1200
+150416_155044: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1600
+150416_164806: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800
+150416_171449: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800
+150416_185453: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800
+150419_155602: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800
+150419_155609: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800
+150419_215257: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M800
+150419_215311: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1200
+150419_215323: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1200
+150419_215341: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1600
+150419_215353: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step1_M1600
+150419_215410: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step1_M800
+150419_215620: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M800_Step2.cfg -submit
+150419_220701: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step1_M1200
+150419_221153: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M1200_Step2.cfg -submit
+150419_230524: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step1_M1600
+150419_232854: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -create -cfg crabGenMC_M1600_Step2.cfg -submit
+150420_125349: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M800
+150420_125431: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M800
+150420_125442: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M1200
+150420_125527: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M800
+150420_125548: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M1200
+150420_132039: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M1600
+150420_132231: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -status -get -c HZG_Step2_M1600
+150420_132352: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step2_M800
+150420_134712: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step2_M1200
+150420_141646: /cvmfs/cms.cern.ch/crab/CRAB_2_11_1_patch1/python/crab.py -publish -c HZG_Step2_M1600
